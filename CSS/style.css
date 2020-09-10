@@ -1,0 +1,481 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* untuk font */
+    --font-bebasNeue: 'Bebas Neue', cursive;
+    --font-lato: 'Lato', sans-serif;
+    --font-lora: 'Lora', serif;
+    --font-quicksand: 'Quicksand', sans-serif;
+    /* cara pake: var(--font-lora); */
+}
+
+body {
+    background-color: black;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    font-family: var(--font-quicksand);
+    font-weight: 700;
+}
+
+.container {
+    padding: 0 40px;
+}
+
+
+/* css izza */
+
+.header {
+    height: 60px;
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.header-left {
+    float: left;
+    padding-left: 100px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.header-left span {
+    color: darkorange;
+}
+
+.header-left a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-right {
+    float: right;
+    padding-right: 100px;
+    padding-top: 20px;
+}
+
+.header-right li {
+    float: left;
+    margin-left: 30px;
+}
+
+.nav {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.nav:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid darkorange;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 3px;
+}
+
+.bar {
+    display: none;
+}
+
+.fa-bars {
+    display: none;
+    color: white;
+    float: right;
+}
+
+
+/* css izza end */
+
+
+/* css hendri */
+
+.main {
+    height: 460px;
+    background: url(../media/main-atas.jpg);
+    background-size: cover;
+    background-position-y: -380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.952);
+    padding: 20px;
+}
+
+.main-title p {
+    font-size: 17px;
+}
+
+.title-button button {
+    margin-top: 4rem;
+    padding: 10px 20px;
+    background-color: black;
+    border: none;
+    color: white;
+    font-family: var(--font-quicksand);
+    letter-spacing: 2px;
+}
+
+.title-button button:active {
+    opacity: 0;
+    transition: 2s;
+}
+
+.main-about {
+    height: 500px;
+    display: grid;
+    grid-template-areas: "gambar penjelasan";
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
+}
+
+.float-left {
+    grid-area: gambar;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.float-right {
+    grid-area: penjelasan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: justify;
+}
+
+.menu-description {
+    height: 280px;
+    width: 350px;
+    background: url(../media/michael-yuan-Sb_kSv-lUbg-unsplash.jpg);
+    background-size: cover;
+}
+
+.menu h1 {
+    margin-bottom: 20px;
+    border-bottom: 2px solid darkorange;
+}
+
+.menu-dish {
+    height: 700px;
+    text-align: center;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding-top: 100px;
+}
+
+.menu-dish h1 {
+    margin-bottom: 100px;
+}
+
+.menu-dish h1::after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid darkorange;
+    width: 10%;
+    margin: auto;
+    padding-bottom: 2px;
+}
+
+.menu-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 320px;
+    width: 20%;
+    background: url(../media/makanan-1.jpg);
+    background-size: cover;
+}
+
+.menu-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 320px;
+    width: 20%;
+    background: url(../media/makanan-2.jpg);
+    background-size: cover;
+}
+
+.menu-three {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 320px;
+    width: 20%;
+    background: url(../media/chad-montano-eeqbbemH9-c-unsplash.jpg);
+    background-size: cover;
+}
+
+.menu-four {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 320px;
+    width: 20%;
+    background: url(../media/fatima-akram-4R_FKg8xG-M-unsplash.jpg);
+    background-size: cover;
+}
+
+.menu-wrapper p {
+    display: none;
+}
+
+.menu-one:hover,
+.menu-two:hover,
+.menu-three:hover,
+.menu-four:hover {
+    opacity: .7;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.menu-one:hover p,
+.menu-two:hover p,
+.menu-three:hover p,
+.menu-four:hover p {
+    display: block;
+    color: white;
+    position: relative;
+    opacity: 1;
+}
+
+
+/* css hendri end */
+
+
+/* css hesti */
+
+.main-message {
+    background-color: black;
+    height: 500px;
+}
+
+.heading {
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 15px;
+}
+
+.heading h2 {
+    margin-bottom: 20px;
+}
+
+.heading h2::after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid darkorange;
+    width: 10%;
+    margin: auto;
+    padding-bottom: 2px;
+}
+
+.heading p {
+    margin-bottom: 10px;
+}
+
+.list-message {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+
+.mess {
+    color: black;
+    height: 200px;
+    line-height: 0;
+    width: 20%;
+    margin: 0 30px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mess:hover {
+    opacity: .8;
+}
+
+.desc {
+    margin: 15px;
+}
+
+.desc h5 {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.desc span {
+    font-weight: normal;
+}
+
+.desc p {
+    font-size: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.rating {
+    margin-top: 20px;
+}
+
+.satu {
+    margin-top: 20px;
+}
+
+.tiga {
+    margin-top: 20px;
+}
+
+
+/* css hesti end */
+
+
+/* css gusti */
+
+.contact-form {
+    background-color: black;
+    height: 600px;
+    padding-top: 150px;
+}
+
+.contact-form .container {
+    margin: 0px auto;
+}
+
+.contact-form {
+    color: white;
+}
+
+.contact-box {
+    background: #fff;
+    display: flex;
+    width: 100%;
+}
+
+.contact-left {
+    flex-basis: 90%;
+    padding: 20px 40px;
+}
+
+.contact-right {
+    flex-basis: 40%;
+    padding: 20px;
+    background: #fb7808;
+    color: #fff;
+}
+
+.contact-left h3 {
+    color: #fb7808;
+}
+
+.contact-right h3 {
+    color: white;
+}
+
+.contact-form .container p {
+    margin-bottom: 40px;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row .input-group {
+    flex-basis: 45%;
+}
+
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    overflow: hidden;
+    padding-bottom: 5px;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+label {
+    margin-bottom: 6px;
+    display: block;
+    color: #fb7808;
+}
+
+.btn {
+    background: #fb7808;
+    font-family: var(--font-quicksand);
+    width: 80px;
+    border: none;
+    color: #fff;
+    height: 35px;
+    margin-top: 20px;
+}
+
+.btn:active {
+    box-shadow: none;
+}
+
+.contact-left h3 {
+    color: #fb7808;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.contact-right h3 {
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+tr td:first-child {
+    padding-right: 20px;
+}
+
+tr td {
+    padding-top: 20px;
+}
+
+.title h1::after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid darkorange;
+    width: 19%;
+    margin-bottom: 10px;
+    /* margin: auto; */
+    padding-bottom: 2px;
+}
+
+::placeholder {
+    font-family: var(--font-quicksand);
+}

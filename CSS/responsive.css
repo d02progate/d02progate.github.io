@@ -1,0 +1,146 @@
+@media screen and (max-width:1000px) {
+    /* hendri */
+    .main {
+        background-position-y: 0px;
+    }
+    .main-about {
+        grid-template-areas: "gambar" "penjelasan";
+        grid-template-columns: 1fr;
+    }
+    .menu-description {
+        height: 250px;
+        width: 250px;
+        background-position: center;
+        background-position-x: -70px;
+    }
+    .main-about {
+        height: 600px;
+    }
+    .menu-dish {
+        height: 900px;
+    }
+    .menu {
+        font-size: 14px;
+    }
+    .menu-one,
+    .menu-two,
+    .menu-three,
+    .menu-four {
+        width: 49%;
+        margin: 5px 0;
+    }
+    /* hendri end */
+    /*izza*/
+    .header-left {
+        padding-left: 50px;
+    }
+    .header-right {
+        padding-right: 50px
+    }
+    .fa-bars {
+        font-size: 40px;
+    }
+    /*izza end*/
+    /* hesti */
+    .main-message {
+        background-color: black;
+        height: 700px;
+    }
+    .mess {
+        color: black;
+        height: 200px;
+        line-height: 0;
+        width: 49%;
+        border-radius: 0px;
+        margin: 2px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+    }
+    .heading {
+        font-size: 13px;
+    }
+    /* hesti end */
+    .contact-right,
+    .contact-left {
+        font-size: 12px;
+    }
+    .contact-form {
+        height: 550px;
+    }
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+    }
+    .contact-box {
+        flex-wrap: wrap;
+    }
+    .input-row {
+        margin-bottom: 5px;
+    }
+    .contact-right h3 {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:670px) {
+    /*izza*/
+    .header-left {
+        padding-left: 30px;
+        font-size: 14px;
+    }
+    .header-right {
+        display: none;
+    }
+    .bar {
+        display: block;
+        padding-right: 30px;
+        padding-top: 10px;
+    }
+    .bar {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    /*izza end*/
+    /* hendri */
+    .menu-description {
+        width: 200px;
+        height: 200px;
+    }
+    .menu {
+        font-size: 12.5px;
+    }
+    .menu-one,
+    .menu-two,
+    .menu-three,
+    .menu-four {
+        width: 100%;
+        height: 250px;
+    }
+    .menu-dish {
+        height: 1300px;
+    }
+    /* hendri end */
+    /* hesti  */
+    .main-message {
+        height: 1200px;
+    }
+    .mess {
+        color: black;
+        height: 190px;
+        line-height: 0;
+        width: 80%;
+        border-radius: 0px;
+        margin: 5px 0;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+    }
+    /* hesti end */
+    /* gusti */
+    .contact-form {
+        padding-top: 50px;
+        height: 500px;
+    }
+    /* gusti end */
+}
